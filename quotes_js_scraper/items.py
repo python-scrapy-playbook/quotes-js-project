@@ -6,7 +6,10 @@
 import scrapy
 
 
-class QuotesJsScraperItem(scrapy.Item):
+class QuoteItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    text = scrapy.Field()
+    author = scrapy.Field()
+    tags = scrapy.Field()
+
+    
